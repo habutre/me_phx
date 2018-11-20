@@ -1,0 +1,41 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Rogério's HomePage" %></h1>
+  <p>This is my webpage which brings my main info<br/>You are welcome to follow me on social media below</p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Professional</h2>
+    <ul>
+      <li>
+        <a href="#">GitHub</a>
+      </li>
+      <li>
+        <a href="#">Gitlab</a>
+      </li>
+      <li>
+        <a href="#">Bitbucket</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/habutre" target="_window">Twitter</a>
+      </li>
+      <li>
+        <a href="#">LinkedIn</a>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>Personal</h2>
+    <ul>
+      <li>
+        <a href="https://twitter.com/rramoss2012" target="_window">Twitter</a>
+      </li>
+      <li>
+        <a href="mailto:rogerio [at] rogerioramos [dot] net [dot] br">Email</a>
+      </li>
+      <li>
+        <a href="javascript:alert('Sorry Facebook is not that cool')">Facebook</a>
+      </li>
+    </ul>
+  </article>
+</section>
