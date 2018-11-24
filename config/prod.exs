@@ -10,8 +10,11 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :me, MeWeb.Endpoint,
-  http: [:inet6, port: System.get_env("PORT") || 4000],
-  url: [host: "example.com", port: 80],
+  http: [
+    ip:   elem(:inet.parse_address(to_charlist(System.get_env("ALWAYSDATA_HTTPD_IP"))), 1),
+    port: System.get_env("ALWAYSDATA_HTTPD_PORT") || 4000
+  ],
+  url: [host: "me.rogerioramos.net.br", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
