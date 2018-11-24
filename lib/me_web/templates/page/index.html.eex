@@ -3,6 +3,12 @@
   <p>This is my webpage which brings my main info<br/>You are welcome to follow me on social media below</p>
 </section>
 
+<section>
+  <div id="greetings">
+    {{message}}
+  </div>
+</section>
+
 <section class="row">
   <article class="column">
     <h2>Professional</h2>
