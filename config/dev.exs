@@ -65,3 +65,12 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :me, ecto_repos: [Me.Repo]
+
+config :me, Me.Repo,
+adapter: Mongo.Ecto,
+  database: System.get_env("DATABASE_NAME"),
+  username: System.get_env("USERNAME"),
+  password: System.get_env("PASSWD"),
+  hostname: System.get_env("HOST_NAME")
